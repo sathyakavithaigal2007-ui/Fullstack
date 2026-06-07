@@ -5,19 +5,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Service from "./pages/Service";
+import {Routes, Route} from 'react-router-dom'
 const App = () => {
   return (
     <>
       <Navbar />
-      
-      <h1>sathya</h1>
-      <h2>sathya</h2>
-      <Counter/>
-      <Parent/>
-      <Home />
-      <About />
-      <Service />
-      <Contact />
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+      </Routes>
     </>
 
 
